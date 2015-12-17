@@ -15,7 +15,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>my_first_project</finalName>
-  </build>
+  <distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>libs-release</name>
+			<url>http://localhost:8082/artifactory/libs-release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://localhost:8082/artifactory/libs-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+  
 </project>
